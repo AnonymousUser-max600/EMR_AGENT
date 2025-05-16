@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="Use LLM for integrate other medical database(og)"/>
+  <meta property="og:description" content="Use LLM for integrate other medical database(og)"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Use LLM for integrate other medical database(twitter)">
+  <meta name="twitter:description" content="Use LLM for integrate other medical database(twitter)">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Akasha project paper</title>
+  <link rel="icon" type="image/x-icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">From Hard-Coding to Agents: No More Rules for EMR Cohort and Feature Extraction</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous Author(s)</a><sup>*</sup>,</span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>NeruIPS 2025</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/rhksgud92/LLM4EMR_DB" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/2505.06191" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- Your video here -->
+        <!-- <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Machine learning models for clinical prediction rely on structured data extracted from Electronic Medical Records (EMRs), yet this process remains dominated by hardcoded, database-specific pipelines for cohort definition, feature selection, and code mapping. These manual efforts limit scalability, reproducibility, and cross-institutional generalization. To address this, we introduce EMR-AGENT (Automated Generalized Extraction and Navigation Tool), an agent-based framework that replaces manual rule writing with dynamic, language model-driven interaction to extract and standardize structured clinical data. Our framework automates cohort selection, feature extraction, and code mapping through interactive querying of databases. Our modular agents iteratively observe query results and reason over schema and documentation, using SQL not just for data retrieval but also as a tool for database observation and decision making. This eliminates the need for hand-crafted, schema-specific logic. To enable rigorous evaluation, we construct and release benchmark datasets for three EMR databases (MIMIC-III, eICU, SICdb), including both seen and unseen schema settings. Our results demonstrate strong performance and generalization across these databases, highlighting the feasibility of automating a process previously thought to require expert-driven design. The code will be released publicly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="box" style="padding: 2rem;">
+        <h2 class="title is-3" style="color: blue;">Cohort/Feature Selection Agent (CFSA) Example</h2>
+        <p class="subtitle is-5 has-text-grey-dark">
+          I want only <strong>male ICU patients</strong> between the <strong>age 70 and 89</strong> who have only <strong>single admission in their lifetime</strong>.<br>
+          I am looking for <strong>age, gender</strong> as static features and <strong>mortality</strong> status for prediction in <strong>eICU</strong> database.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <h2 class="title">1.Schema Linking and Guideline Generation: Mapping Schema</h2>
+          <!-- Your image here -->
+          <img src="static/images/figure for web-06.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Get mapping schema information about user-defined clinical requests.
+          </h2>
+        </div>
+        <div class="item">
+          <h2 class="title">1.Schema Linking and Guideline Generation: Requested Feature</h2>
+          <!-- Your image here -->
+          <img src="static/images/figure for web-07.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Get all schema information about user-defined clinical requests.
+          </h2>
+        </div>
+      <div class="item">
+        <h2 class="title">2.SQL-based Observation : SQL Sufficiency Assessment</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-08.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Use LLM to judge Schema information is sufficient to make SQL about user-defined clinical requests.<br>
+          In this case, LLM think Schema information is enough to make SQL. So, we pass other path in "SQL-based Observation".
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">3.SQL Generation</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-09.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Make SQL with information we got from STEP 1.
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">4.Error Feedback</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-10.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Excute SQL to get data about user-defined clinical requests. But we get SQL Error.<br>
+          So, we do Error Feedback to define problems about error. LLM think, its error promble is because of wrong schema.<br>
+          Then, we start again. If we didn't get Error in this step, we could end Cohort Agent.
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">1.Schema Linking and Guideline Generation (Retry)</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-11.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Retry Schema Linking and Scehma Guideline, using all information that we got from the first step. 
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">2.SQL-based Observation : SQL Sufficiency Assessment (Retry)</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-12.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Use LLM again to judge that Schema information is sufficient to make SQL about user-defined clinical requests.<br>
+          In this case, LLM think we need more information to make correct SQL without making error.<br>
+          With decision, LLM make observation SQL to find additional information to think.
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">2.SQL-based Observation : Data Sufficiency Check</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-13.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Excute observation SQL to get information from Database, then input observation information to check<br>
+          if the observation information is already exist or is it additional important information.
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">2.SQL-based Observation : Schema Update</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-14.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Update old Scehma information with additional information from observation.  
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">2.SQL-based Observation : SQL Sufficiency Assessment (After observation)</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-15.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Use LLM to judge that updated Schema information is sufficient to make SQL about user-defined clinical requests. <br>
+          After think with additional information, LLM think Schema information is enough to make SQL.<br>
+          So, we pass another observation and getting addition information.
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">3.SQL Generation (Retry)</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-16.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          With update Schema information, LLM make SQL again.
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">5.Excute SQL & Test</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-17.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Excute SQL, then we can get data about user expectation(output format and user-defined clinical requests). <br>
+          Finally we can get data with our Cohort Agent.<br>
+          We test our results with True csv file with our evaluation matrics. 
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="box" style="padding: 2rem;">
+        <h2 class="title is-3" style="color: orange;"> Code Mapping Agent (CMA) Example</h2>
+        <p class="subtitle is-5 has-text-grey-dark">
+          I want to use <strong>Hematocrit [Volume Fraction] of Blood (Lab-Test)</strong> as input variables in <strong>SICDB</strong> database.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <h2 class="title">1.Schema Linking and Guideline Generation : Mapping Schema</h2>
+          <!-- Your image here -->
+          <img src="static/images/figure for web-19.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Get mapping schema information about user requested feature.<br>
+            It is important to find feature mapping, because information of feature like vital or lab name are defined by code in many clinical database.<br>
+            So, we need to find schema information which table or column is about how to define feature. 
+          </h2>
+        </div>
+        <div class="item">
+          <h2 class="title">1.Schema Linking and Guideline Generation : Requested Schema</h2>
+          <!-- Your image here -->
+          <img src="static/images/figure for web-20.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Get all schema information about feature.
+          </h2>
+        </div>
+      <div class="item">
+        <h2 class="title">2.Feature Locating</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-21.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Use LLM to think where is feature information that user want. It will be exist in column or value.<br>
+          If LLM action 'None', we need to use Mapping Schema to find feature.<br>
+          In this case, LLM act 'None'. 
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">3.Candidate Matching - Candidate Listing</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-22.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          LLM action is 'None', in that we need to find feature in value excuting SQL.<br>
+          We get TWO sql to check value, then excute them to get all value information.  
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">3.Candidate Matching - Target and Candidate Matching</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-23.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Check all candidates(values) from SQL. We use asynchronous LLM using batch to check all cadidate quickly. <br>
+          So we split candidate to compare requested feature, then get all feature that might be similar with requested feature.
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">3.Candidate Matching - Target and Candidate Matching</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-24.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          After Match 1, merged into one and compare again. 
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">4.Final Code mapping Results</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-25.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Integrate matching result from each matching list. Finally we can get feature information with our Code Mapping Agent.<br>
+          We test our results with True json file with our evaluation matrics. 
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="box" style="padding: 2rem;">
+        <h2 class="title is-3" style="color: green;">Integration Example</h2>
+        <p class="subtitle is-5 has-text-grey-dark">
+          I want only <strong>male ICU patients</strong> between the <strong>age 70 and 89</strong> who have only <strong>single admission in their lifetime</strong>.<br>
+          I am looking for <strong>age, gender</strong> as static features and <strong>mortality</strong> status for prediction,<br>
+          and <strong>Heart rate(Vital Sign)</strong> information about <strong>name, values, unit, measurement time</strong> in <strong>MIMIC-III</strong> database.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <h2 class="title">Use Code mapping Agent & Cohort Agent</h2>
+          <!-- Your image here -->
+          <img src="static/images/figure for web-27.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Use each Agent for its role. Then get each schema information & guideline, feature matching results, and cohort SQL.
+          </h2>
+        </div>
+      <div class="item">
+        <h2 class="title">SQL generation</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-28.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Use LLM to make integration SQL that user requested condition. Its column list is written in the format requested by the user.
+        </h2>
+      </div>
+      <div class="item">
+        <h2 class="title">Make final integration csv file</h2>
+        <!-- Your image here -->
+        <img src="static/images/figure for web-29.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Excute integration SQL to target database. Then make user requested csv file. 
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/EHRAgent.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

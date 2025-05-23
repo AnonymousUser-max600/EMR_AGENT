@@ -379,14 +379,15 @@
 <section class="hero is-small" style="background-color: #e6f4ea;">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-2 has-text-black" style="border-bottom: 2px solid black; padding-bottom: 0.5rem;">
+      <h2 class="title is-2 has-text-black" style="border-bottom: 3px solid black; padding-bottom: 0.5rem;">
         📌 Application of EMR-AGENT
       </h2>
       <p class="subtitle is-5 has-text-black" style="margin-top: 1rem;">
-        Our <strong>EMR-AGENT</strong> – <strong>CFSA</strong> and <strong>CMA</strong> – are capable of constructing 
-        <strong>time-series data</strong> suitable for training clinical event prediction models in downstream tasks.<br><br>
+        Our <strong>EMR-AGENT</strong> framework – <strong>CFSA</strong> and <strong>CMA</strong> – supports downstream clinical tasks
+        <strong>automatically</strong>  without hard-coded rules.<br>
         This section introduces the practical application and <strong>motivates the following Integration Examples</strong>.<br>
-        A formal assessment will be addressed in future work, but we provide <strong>a potential application prompt</strong> as a reference here.
+        In response to a specified prompt, CMA generates an SQL query conditioned on time constraints, which is then integrated with CFSA’s output.<br>
+        The resulting SQL produces the user request Event Stream Dataset.
       </p>
     </div>
   </div>
@@ -398,7 +399,8 @@
       <div class="box" style="padding: 2rem;">
         <h2 class="title is-3" style="color: green;">Integration Example</h2>
         <p class="subtitle is-5 has-text-grey-dark">
-          I want only <strong>male ICU patients</strong> between the <strong>age 70 and 89</strong> who have only <strong>single admission in their lifetime</strong>.<br>
+          I want only <strong>male ICU patients</strong> between the <strong>age 70 and 89</strong> who have only <strong>single admission in their lifetime</strong><br>
+          and who measure Heart rate within <strong>48 hours</strong>strong> after ICU admission.<br>
           I am looking for <strong>age, gender</strong> as static features and <strong>mortality</strong> status for prediction,<br>
           and <strong>Heart rate(Vital Sign)</strong> information about <strong>name, values, unit, measurement time</strong> in <strong>MIMIC-III</strong> database.
         </p>

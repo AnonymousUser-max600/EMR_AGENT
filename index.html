@@ -341,8 +341,7 @@
         <!-- Your image here -->
         <img src="static/images/figure for web-23.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Check all candidates(values) from SQL. We use asynchronous LLM using batch to check all cadidate quickly. <br>
-          So we split candidate to compare requested feature, then get all feature that might be similar with requested feature.
+          Compare each candidate to the user-requested feature and list only the candidates that has higher similarity score than the user-defined similarity threshold score.
         </h2>
       </div>
       <div class="item">
@@ -350,7 +349,7 @@
         <!-- Your image here -->
         <img src="static/images/figure for web-24.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          After initial comparsion, merged into one and compare again. 
+          After the initial comparsion process, we merge the remaining candidates into one list and compare them with the user-requested feature once again.
         </h2>
       </div>
       <div class="item">
